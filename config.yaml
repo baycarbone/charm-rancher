@@ -1,0 +1,22 @@
+# Copyright 2021 Ubuntu
+# See LICENSE file for licensing details.
+#
+# TEMPLATE-TODO: change this example to suit your needs.
+# If you don't need a config, you can remove the file entirely.
+# It ties in to the example _on_config_changed handler in src/charm.py
+#
+# Learn more about config at: https://juju.is/docs/sdk/config
+
+options:
+  https-listen-port:
+    default: 443
+    description: Port number to listen on for https.
+    type: int
+  add-local:
+    default: true
+    description: Whether to add the local cluster to rancher or not.
+    type: boolean
+  external_hostname:
+    default: rancher.dev
+    description: Hostname to reach rancher from outside the cluster.
+    type: string
